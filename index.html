@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharadfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.14/lottie.min.js"></script>
+</head>
+<body class="dark-theme">
+    <div class="grid-background"></div>
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    <div class="coffee-mug" tabindex="0" title="Buy me a coffee">
+        <img src="coffee-cup.png" alt="Buy me a coffee" class="coffee-cup-img">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="logo">
+            <span class="logo-text">sharad</span>
+            <span class="accent">folio</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <a href="qr-code.png" class="coffee-mug" title="Buy me a coffee" target="_blank" rel="noopener">
+            <img src="coffee-cup.jpg" alt="Buy me a coffee" class="coffee-cup-img">
+            <span class="qr-tooltip">
+                <img src="qr-code.png" alt="UPI QR Code" class="qr-tooltip-img">
+            </span>
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-anim"></div>
+        <div class="hero-content" data-aos="fade-up">
+            <div class="typewriter-container">
+                <span class="typewriter-text"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="subtitle">I build things for the web</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="cta-button primary">View Projects</a>
+                <a href="#contact" class="cta-button secondary">Get in Touch</a>
+            </div>
+        </div>
+        <img src="profile.jpg" alt="Sharad Sharma" class="hero-photo" />
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 data-aos="fade-up">About Me</h2>
+        <div class="about-content glass">
+            <div class="about-text" data-aos="fade-right">
+                <p class="about-intro">First-Year Electronics and Computer Engineering Student</p>
+                <div class="about-details">
+                    <p>🧠 Aspiring Software Developer</p>
+                    <p>💻 Frontend Developer (React, JS, HTML, CSS, Ultimate CSS)</p>
+                    <p>👨‍💻 Proficient in C++ and Python</p>
+                    <p>🔍 Exploring DSA, AI/ML, and Data Visualization</p>
+                    <p>🤖 Hands-on with Arduino and IoT projects</p>
+                    <p>⚙️ Building projects combining Hardware + Software</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 data-aos="fade-up">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card glass" data-aos="zoom-in">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card glass" data-aos="zoom-in">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-card glass" data-aos="zoom-in">
+                <i class="fas fa-microchip"></i>
+                <h3>Arduino</h3>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="skill-card glass" data-aos="zoom-in">
+                <i class="fas fa-code"></i>
+                <h3>C++</h3>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-card glass" data-aos="zoom-in">
+                <i class="fab fa-github"></i>
+                <h3>Git & GitHub</h3>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 80%"></div>
+                </div>
+            </div>
+            <div class="skill-card glass" data-aos="zoom-in">
+                <i class="fas fa-database"></i>
+                <h3>Numpy & Pandas</h3>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 75%"></div>
+                </div>
+            </div>
+            <div class="skill-card glass" data-aos="zoom-in">
+                <i class="fab fa-css3-alt"></i>
+                <h3>Tailwind CSS</h3>
+                <div class="skill-level">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 data-aos="fade-up">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card glass" data-aos="flip-left">
+                <div class="project-header">
+                    <i class="fas fa-laptop-code"></i>
+                    <div class="project-links">
+                        <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3>Portfolio Website</h3>
+                <p>A modern, responsive portfolio website showcasing my projects and skills.</p>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>Three.js</span>
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
+            <div class="project-card glass" data-aos="flip-left">
+                <div class="project-header">
+                    <i class="fas fa-store"></i>
+                    <div class="project-links">
+                        <a href="https://mallverse.vercel.app/" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <h3>Mallverse - BitBox 5.0</h3>
+                <p>Top 19 in BitBox 5.0 Hackathon - A virtual mall experience with VR integration.</p>
+                <div class="project-tech">
+                    <span>React</span>
+                    <span>VR</span>
+                    <span>3D</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <h2 data-aos="fade-up">Journey</h2>
+        <div class="timeline-container">
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass">
+                    <h3>April 2025</h3>
+                    <p>Participated in BitBox 5.0 Hackathon</p>
+                    <p class="timeline-desc">Developed Mallverse - A virtual mall experience with VR integration</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass">
+                    <h3>May 2025</h3>
+                    <p>UI/UX Antbobbles Bootcamp</p>
+                    <p class="timeline-desc">Mastered modern UI/UX design principles and tools</p>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content glass">
+                    <h3>June 2025</h3>
+                    <p>Arduino Programming Workshop</p>
+                    <p class="timeline-desc">Hands-on experience with IoT and embedded systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <h2 data-aos="fade-up">Certifications</h2>
+        <div class="cert-grid">
+            <div class="cert-card glass" data-aos="zoom-in">
+                <i class="fas fa-certificate"></i>
+                <h3>Software Engineering</h3>
+                <p>JPMC Advanced Software Engineering Program</p>
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_DZ8jwWW33726BoKAw_1744516470285_completion_certificate.pdf" target="_blank" class="cert-link">View Certificate</a>
+            </div>
+            <div class="cert-card glass" data-aos="zoom-in">
+                <i class="fas fa-award"></i>
+                <h3>Web Development</h3>
+                <p>Advanced Web Development Certification</p>
+                <a href="https://certificate.givemycertificate.com/c/e343d79c-db65-4690-aea8-1a3ed8fd7f98" target="_blank" class="cert-link">View Certificate</a>
+            </div>
+            <div class="cert-card glass" data-aos="zoom-in">
+                <i class="fas fa-code"></i>
+                <h3>C# Programming</h3>
+                <p>Foundational C# with Microsoft</p>
+                <a href="https://www.freecodecamp.org/certification/SharadEqual/foundational-c-sharp-with-microsoft" target="_blank" class="cert-link">View Certificate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 data-aos="fade-up">Get in Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info glass" data-aos="fade-right">
+                <h3>Let's Connect! 🚀</h3>
+                <p>First Year Electronics and Computer Engineering Student at Jaypee Institute of Information Technology</p>
+                <p>Way more to go - This is just the beginning of my journey! 💫</p>
+                <div class="social-links">
+                    <a href="https://github.com/NotEquaL11" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/sharad-sharma-351588304/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+            <form class="contact-form glass terminal" data-aos="fade-left">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="terminal-title">contact.sh</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="form-group">
+                        <span class="prompt">$</span>
+                        <input type="text" name="name" value="sharad sharma" readonly>
+                    </div>
+                    <div class="form-group">
+                        <span class="prompt">$</span>
+                        <input type="email" name="email" value="officialsharadsharma@gmail.com" readonly>
+                    </div>
+                    <div class="form-group">
+                        <span class="prompt">$</span>
+                        <textarea name="message" placeholder="Don't Think !! 😎" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span class="prompt">$</span>
+                        <span>send_message</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+  <!--  <footer class="glass">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>-->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
